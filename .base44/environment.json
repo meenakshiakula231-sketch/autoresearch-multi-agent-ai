@@ -1,0 +1,12 @@
+{
+  "previewPort": 3000,
+  "healthPath": "/health",
+  "startCommand": "docker compose -f docker-compose.base44.yml up -d",
+  "secrets": [
+    {
+      "name": "OPENAI_API_KEY",
+      "description": "Optional: OpenAI API key for AI-powered summaries. Without it, the app falls back to local extractive summarization. Get one at https://platform.openai.com/api-keys.",
+      "requiredAtBoot": false
+    }
+  ]
+}
